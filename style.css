@@ -1,0 +1,210 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+    color: #222;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #005baa;
+    color: #fff;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+.logo img {
+    height: 48px;
+    margin-right: 1rem;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+nav a:hover {
+    color: #ffd700;
+}
+.hero {
+    background: linear-gradient(120deg, #005baa 60%, #ffd700 100%);
+    color: #fff;
+    text-align: center;
+    padding: 4rem 2rem 3rem 2rem;
+}
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+.hero .cta {
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: 0.75rem 2rem;
+    background: #ffd700;
+    color: #005baa;
+    border-radius: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background 0.2s;
+}
+.hero .cta:hover {
+    background: #fff;
+    color: #005baa;
+}
+section {
+    padding: 3rem 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+#about {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+    margin-top: -2rem;
+    position: relative;
+    z-index: 2;
+}
+#events .events-list {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+.event-card {
+    background: #f7fafc;
+    border-radius: 12px;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.06);
+    padding: 1.5rem;
+    flex: 1 1 250px;
+    min-width: 220px;
+    margin-bottom: 1rem;
+}
+.event-card .date {
+    display: block;
+    margin-top: 0.5rem;
+    color: #005baa;
+    font-weight: bold;
+}
+#team .team-list {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.team-member {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.06);
+    padding: 1.5rem;
+    text-align: center;
+    width: 180px;
+}
+.team-member img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 0.5rem;
+    border: 3px solid #005baa;
+}
+#contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 400px;
+    margin: 0 auto;
+}
+#contact input, #contact textarea {
+    padding: 0.75rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+#contact button {
+    background: #005baa;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 0.75rem;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+#contact button:hover {
+    background: #ffd700;
+    color: #005baa;
+}
+footer {
+    background: #005baa;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+    border-radius: 0 0 16px 16px;
+}
+/* Header container for logo alignment */
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.logo-left {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+}
+.logo-left img {
+    max-height: 56px;
+    width: auto;
+}
+.logo-center {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.logo-center img {
+    max-height: 64px;
+    width: auto;
+    margin-bottom: 0.25rem;
+}
+.logo-center h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    text-align: center;
+}
+nav {
+    flex: 0 0 auto;
+}
+@media (max-width: 700px) {
+    .events-list, .team-list {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    header {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .header-container {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    .logo-center h1 {
+        font-size: 1.1rem;
+    }
+    .logo-center img, .logo-left img {
+        max-height: 40px;
+    }
+}
